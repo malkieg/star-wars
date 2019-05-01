@@ -1,3 +1,8 @@
-<p>
-  results works!
-</p>
+<div *ngIf="results">
+  <div *ngFor="let result of results">
+    <p>name: {{result.name}}</p>
+    <p>created:{{result.created}}</p>
+    <p>films: {{result.films}}</p>
+    <p>starships: {{result.starships}}</p>
+  </div>
+</div>
